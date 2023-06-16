@@ -1,9 +1,11 @@
 body {
   font-family: 'Pacifico', cursive;
-  background-color: #f4f4f4;
+  background: url(https://images.unsplash.com/photo-1575722290270-626b0208df99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80), #f4f4f4;
   color: #333;
   margin: 0;
   padding: 0;
+  background-size: contain;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
@@ -27,11 +29,13 @@ form {
 
 fieldset {
   border: none;
+  font-size: 30px;
+  color: #971f1f;
   margin-bottom: 20px;
   text-align: center;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.425);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 500px;
 }
 
 input[type="radio"],
