@@ -27,7 +27,7 @@ Pizza.prototype.calculatePrice = function () {
 //User Interface Logic
 
 window.addEventListener('DOMContentLoaded', (event) => {
-  const form = document.getElementById('pizza-order-form');
+  const form = document.getElementById('pizzaOrderForm');
   const resultDiv = document.getElementById('result');
 
   form.addEventListener('submit', function (event) {

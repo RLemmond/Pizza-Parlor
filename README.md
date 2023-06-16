@@ -20,7 +20,7 @@ _"Pizza Parlor is a web application that allows users to customize and order piz
 
 ## Setup/Installation Requirements
 
-* _Clone the repository:_ _()_
+* _Clone the repository:_ _(https://github.com/RLemmond/Pizza-Parlor.git)_
 * _Open the project in your preferred code editor._
 * _Launch the index.html file in a web browser._
 
