@@ -27,25 +27,25 @@ Pizza.prototype.calculatePrice = function () {
 //User Interface Logic
 
 window.addEventListener('DOMContentLoaded', (event) => {
-  const form = document, getElementById('pizza-form');
+  const form = document.getElementById('pizza-order-form');
   const resultDiv = document.getElementById('result');
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     //get chosen size
-    const sizeInput = document.getElementById('size');
+    let size;
+    const sizeInput = document.getElementsByName('size');
     for (let i = 0; i < sizeInput.length; i++) {
       if (sizeInput[i].checked) {
         size = sizeInput[i].value;
-
         break;
       }
     }
 
     //Get Chosen Toppings
     const toppings = [];
-    const toppingInputs = document.getElementsByClassName('toppings');
+    const toppingInputs = document.getElementsByName('topping');
     for (let i = 0; i < toppingInputs.length; i++) {
       if (toppingInputs[i].checked) {
         toppings.push(toppingInputs[i].value);
@@ -60,5 +60,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const cost = myPizza.calculatePrice();
     resultDiv.textContent = "Your Pizza will cost $" + cost;
   });
-}
 });
