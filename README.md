@@ -8,7 +8,7 @@ _"Pizza Parlor is a web application that allows users to customize and order piz
 
 ## GitHub Page Link
 
-
+_https://rlemmond.github.io/Pizza-Parlor/_
 
 ## Technologies Used
 
