@@ -44,8 +44,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     //Get Chosen Toppings
-
-
+    const toppings = [];
+    const toppingInputs = document.getElementsByClassName('toppings');
+    for (let i = 0; i < toppingInputs.length; i++) {
+      if (toppingInputs[i].checked) {
+        toppings.push(toppingInputs[i].value);
+      }
+    }
 
     //Create New Pizza Object
     const myPizza = new Pizza(toppings, size);
