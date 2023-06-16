@@ -61,5 +61,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     resultDiv.textContent = "Your Pizza will cost $" + cost;
 
     resultDiv.classList.add('show');
+
+    form.reset();
   });
 });
