@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     //Calculate and Display Price
     const cost = myPizza.calculatePrice();
-    resultDiv.textContent = "Your Pizza will cost $" + cost;
+    resultDiv.textContent = "Your Pizza Will Cost $" + cost;
 
     resultDiv.classList.add('show');
 

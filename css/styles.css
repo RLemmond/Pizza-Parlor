@@ -40,10 +40,10 @@ form {
 fieldset {
   border: none;
   font-size: 30px;
-  color: #8B4513;
+  color: #e47424b6;
   margin-bottom: 20px;
   text-align: center;
-  background: rgba(253, 245, 230, 0.5);
+  background: rgba(107, 101, 101, 0.5);
   padding: 20px;
   border-radius: 500px;
   display: flex;
