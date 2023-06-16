@@ -1,4 +1,3 @@
-//Buisness Logic
 function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;
@@ -24,8 +23,6 @@ Pizza.prototype.calculatePrice = function () {
   return baseCost + toppingsCost;
 };
 
-//User Interface Logic
-
 window.addEventListener('DOMContentLoaded', (event) => {
   const form = document.getElementById('pizzaOrderForm');
   const resultDiv = document.getElementById('result');
@@ -33,7 +30,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    //get chosen size
     let size;
     const sizeInput = document.getElementsByName('size');
     for (let i = 0; i < sizeInput.length; i++) {
@@ -43,7 +39,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
       }
     }
 
-    //Get Chosen Toppings
     const toppings = [];
     const toppingInputs = document.getElementsByName('topping');
     for (let i = 0; i < toppingInputs.length; i++) {
@@ -52,11 +47,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
       }
     }
 
-    //Create New Pizza Object
     const myPizza = new Pizza(toppings, size);
 
-
-    //Calculate and Display Price
     const cost = myPizza.calculatePrice();
     resultDiv.textContent = "Your Pizza Will Cost $" + cost;
 
